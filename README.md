@@ -105,10 +105,17 @@ Hier ist zu erkennen, dass durch eine einfach if/else-Abfrage geprüft wird, um 
 Hier ist der Ausgabetext zu erkennen. Die Variablen werden automatisch gefüllt. `\n` bedeutet Zeilenumbruch.
 
 Die [EmailEmpfangen](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailEmpfangen.java)
-wird
+Java-Klasse ist nur zu Demonstrativzwecken eingebaut, und wird in einem echten Prozess selbstverständlich nicht zum Tragen kommen, da das von seiten des Lieferanten ausgehen muss und darauf kein Einfluss genommen werden kann. 
 
 Die [Datenbank](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/Database.java)
-wird
+ist eine integrierte Datenbank innerhalb von Camunda. Wir haben sie genutzt, um bestimmte Informationen in ihr abzuspeichern. Im Kapitel **Potenzielle Verknüpfungen zu anderen Prozessen** wird noch mal Stellung zu dem Thema genommen.
+
+Um nur die Abfrage zu zeigen, wie die Datenbank funktioniert, folgt ein kleiner Ausschnitt:
+```
+			String sql = "INSERT INTO WARENBESTAND (BEZEICHNUNG, ANZAHL, GESAMTPREIS, LIEFERANT) VALUES ('"+ bezeichnung +"','" + menge + "','" + gesamtpreis + "','" + lieferanten + "')";
+```          
+
+Wir wollten auch ein Datum hinterlegen, allerdings hat die Datenbank ein bestimmtes Format gefordert, welches wir in der Kürze der Zeit nicht abbilden konnten.
 
 Abschließend ist noch die [SaveToFile](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/SaveToFile.java)
 zu nennen.
