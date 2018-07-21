@@ -1,0 +1,72 @@
+<form class="form-horizontal"><fieldset><!-- Form Name --> <legend>Rechnung begleichen!</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bezeichnung">Bezeichnung</label>
+  <div class="col-md-4">
+    <input id="bezeichnung" class="form-control input-md" name="bezeichnung" readonly type="text" placeholder="Zu bestellendes Produkt" cam-variable-name="bezeichnung" cam-variable-type="String" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="menge">Menge</label>
+  <div class="col-md-4">
+    <input id="menge" readonly class="form-control input-md" name="menge" type="number" placeholder="Bestellmenge" cam-variable-name="menge" cam-variable-type="Long"/>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label"        for="einzelpreis">Einzelpreis</label>
+  <div class="col-md-4">
+    <input id="einzelpreis" readonly class="form-control input-md" name="einzelpreis" required="" type="number" placeholder="Preis pro St&uuml;ck" cam-variable-name="einzelpreis" cam-variable-type="Long" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label"        for="gesamtpreis">Gesamtpreis</label>
+  <div class="col-md-4">
+    <input id="gesamtpreis" readonly class="form-control input-md" name="gesamtpreis" type="number" cam-variable-name="gesamtpreis" cam-variable-type="Long" />
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rahmenvertrag">Rahmenvertrag vorhanden</label>
+  <div class="col-md-4">
+ <input id="rahmenvertrag" readonly cam-variable-name="rahmenvertrag" cam-variable-type="String" name="rahmenvertrag" class="form-control input-md" type="text" />
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label"  for="rahmenvertraege">Rahmenvertrag</label>
+  <div class="col-md-4">
+    <input id="rahmenvertraege" readonly cam-variable-name="rahmenvertraege" cam-variable-type="String" name="rahmenvertraege" class="form-control input-md" type="text">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label"  for="lieferant">Lieferant</label>
+  <div class="col-md-4">
+    <input id="lieferant" readonly cam-variable-name="lieferant" cam-variable-type="String" name="lieferant" class="form-control input-md" type="text">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="hinweis">Hinweise/Beschreibung</label>
+  <div class="col-md-4">
+    <textarea id="hinweis" readonly cam-variable-name="hinweis" cam-variable-type="String" class="form-control" name="hinweis"></textarea>
+  </div>
+</div>
+
+<br>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rechnungbegleichen">Rechnung begleichen</label>
+  <div class="col-md-4">
+    <button id="rechnungbegleichen" onclick="alert('&Uuml;berweisung wurde ausgef&uuml;hrt')" cam-variable-name="rechnungbegleichen" cam-variable-type="Boolean" name="rechnungbegleichen" value="true" >&Uuml;berweisen</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

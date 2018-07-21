@@ -1,0 +1,58 @@
+<form class="form-horizontal"><fieldset><!-- Form Name --> <legend>Beschaffungsantrag</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bezeichnung">Bezeichnung</label>
+  <div class="col-md-4">
+    <input id="bezeichnung" class="form-control input-md" name="bezeichnung" type="text" placeholder="Zu bestellendes Produkt" cam-variable-name="bezeichnung" cam-variable-type="String" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="menge">Menge</label>
+  <div class="col-md-4">
+    <input id="menge" class="form-control input-md" name="menge" type="number" placeholder="Bestellmenge" cam-variable-name="menge" cam-variable-type="Long"/>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="einzelpreis">Einzelpreis</label>
+  <div class="col-md-4">
+    <input id="einzelpreis" class="form-control input-md" name="einzelpreis" type="number" placeholder="Preis pro St&uuml;ck" cam-variable-name="einzelpreis" cam-variable-type="Long" />
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rahmenvertrag">Rahmenvertrag vorhanden</label>
+  <div class="col-md-4">
+    <select id="rahmenvertrag" cam-variable-name="rahmenvertrag" cam-variable-type="Boolean" name="rahmenvertrag" class="form-control">
+      <option value="true">Ja</option>
+      <option value="false">Nein</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label"  for="rahmenvertraege">Rahmenvertrag</label>
+  <div class="col-md-4">
+    <select id="rahmenvertraege" cam-variable-name="rahmenvertraege" cam-variable-type="String" name="rahmenvertraege" class="form-control">
+      <option value="0">Kein Rahmenvertrag</option>
+      <option value="A">Rahmenvertrag A</option>
+      <option value="B">Rahmenvertrag B</option>
+      <option value="C">Rahmenvertrag C</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="hinweis">Hinweise/Beschreibung</label>
+  <div class="col-md-4">
+    <textarea id="hinweis" cam-variable-name="hinweis" cam-variable-type="String" class="form-control" name="hinweis"></textarea>
+  </div>
+</div>
+
+</fieldset>
+</form>

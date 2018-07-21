@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="Definitions_1w4h6se" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxhf" name="Decision 1">
+    <extensionElements>
+      <biodi:bounds x="374" y="124" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable_1">
+      <input id="InputClause_0pmn9tj" label="Rahmenvertrag">
+        <inputExpression id="LiteralExpression_1syhkkk" typeRef="boolean">
+          <text>rahmenvertrag</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12ckb2h" label="Gesamtpreis">
+        <inputExpression id="LiteralExpression_19ge7t9" typeRef="long">
+          <text>gesamtpreis</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0e1v91h" label="Rahmenverträge">
+        <inputExpression id="LiteralExpression_1ccdo0j" typeRef="string">
+          <text>rahmenvertraege</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Lieferant" name="lieferant" typeRef="string" />
+      <rule id="DecisionRule_1i5vhf7">
+        <inputEntry id="UnaryTests_13johb9">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jjiarq">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m4bra6">
+          <text>"A"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lkl05o">
+          <text>"Lieferant A"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ogztzm">
+        <inputEntry id="UnaryTests_1306l6v">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jcr5ch">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04fokz2">
+          <text>"B"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gvm99a">
+          <text>"Lieferant B"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0p2ra03">
+        <inputEntry id="UnaryTests_07ndf4k">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n1qasb">
+          <text>-</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rclsdt">
+          <text>"C"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1c0n49n">
+          <text>"Lieferant C"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15t7c2z">
+        <inputEntry id="UnaryTests_19y7h8j">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0obb9i2">
+          <text>]0..500]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1x5gj6i">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08usrcx">
+          <text>"Lieferant D"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0z31bbe">
+        <inputEntry id="UnaryTests_0vn7dce">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08863p0">
+          <text>]500..20000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1765ws8">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wz9dp4">
+          <text>"Lieferant E"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
