@@ -47,6 +47,8 @@ Folgt man den mittleren oder unteren Pfad des Gateways dann wird in beiden Fäll
 
 Kurzgefasst ist die Decision Model and Notation eine Entscheidungsregel im Geschäftsprozessmanagement, das heißt, dass vordefinierten Regeln gefolgt werden. Diese Regeln müssen in der Tabelle vollständig aufgefangen werden, und ein entsprechendes Output (ein entsprechender Ausgang) angegeben werden.
 
+Unsere Hit Policy lautet: UNIQUE
+
 Unser DMN Modell hat drei Inputvariablen, die überprüft werden müssen:
 - Rahmenvertrag (Boolean)
 - Gesamtpreis (Long)
