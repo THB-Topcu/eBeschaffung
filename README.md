@@ -14,6 +14,9 @@ Für eine lokale Installation und Konfiguration verweisen wir auf die Dokumentat
 
 ## Einordnung des Themas in die Prozess-Landschaft (2 Punkte)
 
-Der Prozess **elektronische Beschaffung** ist stark mit dem Prozess **eRechnung** verwoben, da eine elektronische Beschaffung nur verwendet werden kann, wenn alle Teilprozesse ebenfalls automatisiert sind. Diese Dokumentation befasst sich allerdings ausschließlich mit der elektronischen Beschaffung, die seinen Teil zur Schaffung einer Digitalen Hochschule beiträgt. Eine andere Gruppe wird sich ganz dem Prozess eRechnung widmen, sodass dieser Prozess ebenfalls betrachtet wird. Beide Prozesse fallen in dem Bereich der Digitalen Verwaltung unter Führung des Hochschulkanzlers.
+Der Prozess **elektronische Beschaffung** ist stark mit dem Prozess **eRechnung** verwoben, da eine elektronische Beschaffung nur verwendet werden kann, wenn alle Teilprozesse ebenfalls automatisiert sind. Diese Dokumentation befasst sich allerdings ausschließlich mit der elektronischen Beschaffung, die seinen Teil zur Schaffung einer Digitalen Hochschule beiträgt. Eine andere Gruppe wird sich ganz dem Prozess eRechnung widmen, sodass dieser Prozess ebenfalls betrachtet wird. Beide Prozesse fallen in dem Bereich der Digitalen Verwaltung unter Führung des Hochschulkanzlers. Der Einkauf von Materialen und Dienstleistungen wird in unterschiedlichen Bereichen der Hochschule durchgeführt und kann durch die elektronische Beschaffung vollständig standardisiert und digitalisiert werden. Die elektronische Beschaffung kann mit ihren einzelnen Aktivitäten als Prozesshierarchie wie folgt dargestellt werden:
+![Prozesshierarchie](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Prozesshierarchie.png)
 
-Der Einkauf von Materialen und Dienstleistungen wird in unterschiedlichen Bereichen der Hochschule durchgeführt und kann durch die elektronische Beschaffung vollständig standardisiert und digitalisiert werden. Die elektronische Beschaffung kann mit ihren einzelnen Aktivitäten als Prozesshierarchie wie folgt dargestellt werden:
+
+
+
