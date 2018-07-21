@@ -36,7 +36,7 @@ Der Prozess ist mangels Zeit und Know-How nicht vollständig fachlich modelliert
 Als weitere Eigenkritik ist anzumerken, dass die Aktivität *Rechnung begleichen* nur via Button ausgeführt wird, der die Variable dann auf True setzt, damit der Prozess weiterläuft. Hier ist es sicher auch möglich noch eine elegantere Weise zu wählen, die den Überweisungsprozess etwas anschaulicher darstellt.
 
 
-## potenzielle Verknüpfungen zu anderen Prozessen (3 Punkte)
+## Potenzielle Verknüpfungen zu anderen Prozessen (3 Punkte)
 Wie eingangs beschrieben, ist der gesamte Prozess der e-Beschaffung stark mit allen anderen digitalisierten Prozessen innerhalb der  Verwaltung verknüpft, sodass jede noch manuell ausgeführte Aktivität weiter digitalisiert werden könnte. Auch Themen wie e-Akte oder die bereits erwähnte eRechnung kann ideal mit dem Prozess verknüpft werden. 
 
 Bei Kleinbestellungen (bis 100€?) können automatisierte Überweisungsprozesse greifen, die selbstverständlich in einem regemäßigen Zyklus von Intern oder Extern geprüft werden müssten, damit Betrug und Untreue ausgeschlossen werden kann, bzw. schnell geahndet wird. Eine weitere Verknüpfungsmöglichkeit bietet die *digitale Archivierung*. In unserem Prozess findet zwar eine „Archivierung“ via Datenbank und das Abspeichern der Bestellung in eine extra Datei statt, aber es kann durch einen komplett aufgezogenen Prozess eine *digitale Archivierung* geschaffen werden, die nicht nur die e-Beschaffung, sondern auch weitere Prozesse digital festhält.
