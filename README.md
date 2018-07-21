@@ -69,8 +69,7 @@ Das Formular ist unter: //src/main/webapp/Formular/Rechnungbegleichen.html abgel
 ![Formular](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Formular%20hinzuf%C3%BCgen.PNG)
 
 Wir hatten anfangs ein internes Formular, aber haben uns letztlich für ein externes Formular entschieden, da das externe Formular mehr Freiheiten bot und Pflichtfelder einfacher bestimmt werden konnten. Außerdem konnten wir mit Hilfe des Befehls
->readonly 
-bestimmte Felder vor dem Bearbeiten schützen.
+`readonly` bestimmte Felder vor dem Bearbeiten schützen.
 
 
 ## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
