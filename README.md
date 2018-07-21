@@ -77,7 +77,32 @@ Wir hatten anfangs ein internes Formular, aber haben uns letztlich für ein exte
 `readonly` bestimmte Felder vor dem Bearbeiten schützen.
 
 Die [SendTask](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailSenden.java)
-wird
+wird automatisch ausgeführt, dabei wird eine e-Mail mit entsprechenden Informationen an den entsprechenden Lieferanten geschickt.
+
+```
+if (lieferanten.equals("Lieferant A")) {
+    		emailaddress = "lieferantA@service.de"; //E-Mail des Lieferanten A
+    	}
+      else if (lieferanten.equals("Lieferant B")) { //E-Mail des Lieferanten B
+  		emailaddress = "lieferantB@service.de";
+  	    }
+      else if (lieferanten.equals("Lieferant C")) { //E-Mail des Lieferanten C
+  		emailaddress = "lieferantC@service.de";
+     	}
+      else if (lieferanten.equals("Lieferant D")) { //E-Mail des Lieferanten D
+  		emailaddress = "lieferantD@service.de";
+  	}
+        else if (lieferanten.equals("Lieferant E")) { //E-Mail des Lieferanten E
+      		emailaddress = "lieferantE@service.de";
+}
+```
+Hier ist zu erkennen, dass durch eine einfach if/else-Abfrage geprüft wird, um welchen Lieferanten es sich handelt. Die Lieferanten-Variable wurde durch die DMN-Tabelle bestimmt. Es wird also immer genau die e-Mail Adresse genutzt, die unter dem jeweiligen Lieferanten steckt.
+
+```
+      String inhalt = "Sehr geehrter "  + lieferanten +", \n\ndas e-Beschaffungsteam der Hochschule Musterburg würde gerne folgendes bestellen: \n\nArtikel: " + bezeichnung + "\nMenge: "+ menge + "\nListengesamtpreis: " + gesamtpreis + "€.\n\nMit freundlichen Gruessen, \n\ndas e-Beschaffungsteam";
+```      
+
+Hier ist der Ausgabetext zu erkennen. Die Variablen werden automatisch gefüllt. `\n` bedeutet Zeilenumbruch.
 
 Die [EmailEmpfangen](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailEmpfangen.java)
 wird
