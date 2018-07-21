@@ -22,6 +22,15 @@ Die elektronische Beschaffung kann mit ihren einzelnen Aktivitäten als Prozessh
 
 ## Abgrenzung und Beschreibung der Prozesse und Entscheidungen (6 Punkte)
 
+### BPMN Modell
+
+Das BPMN Modell kann ganz oben in der Dokumentation betrachtet werden.
+
+
+
+### DMN Modell
+
+![DMN Modell](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/DMN%20Modell.PNG)
 
 
 
