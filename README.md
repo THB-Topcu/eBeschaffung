@@ -64,10 +64,12 @@ Die DMN-Tabelle ist relativ einfach zu lesen. Sollte ein Rahmenvertrag für das 
 Wir arbeiten insgesamt mit zwei externen Formularen, die im Camunda Modeler im BPMN-Prozess in der jeweiligen Aktivität hinterlegt werden müssen.
 Dazu klickt man die Aktivität an und wählt den Reiter Forms aus, und fügt den Link zum Formular in das Feld "Form Key" ein.
 Bsp.: embedded:app:Formular/Rechnungbegleichen.html
-
+Das Formular ist unter: //src/main/webapp/Formular/Rechnungbegleichen.html abgelegt.
 ![Formular](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Formular%20hinzuf%C3%BCgen.PNG)
 
-
+Wir hatten anfangs ein internes Formular, aber haben uns letztlich für ein externes Formular entschieden, da das externe Formular mehr Freiheiten bot und Pflichtfelder einfacher bestimmt werden konnten. Außerdem konnten wir mit Hilfe des Befehls
+>readonly 
+bestimmte Felder vor dem Bearbeiten schützen.
 
 
 ## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
