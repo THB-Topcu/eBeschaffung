@@ -20,5 +20,20 @@ Die elektronische Beschaffung kann mit ihren einzelnen Aktivitäten als Prozessh
 ![Prozesshierarchie](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Prozesshierarchie.png)
 
 
+## Abgrenzung und Beschreibung der Prozesse und Entscheidungen (6 Punkte)
 
+
+
+
+## Erläuterung fachlicher und technischer Modellierungsentscheidungen (6 Punkte)
+
+
+
+
+## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
+Der Prozess ist mangels Zeit und Know-How nicht vollständig fachlich modelliert. Der Simple-Path funktioniert einwandfrei, aber sollte eine Lieferung nicht über den Rahmenvertrag laufen, fehlen noch die technischen Implementierungsschritte für das manuelle Einleiten des Vergabeprozesses. Das ist zwar über eine technisch nicht sehr anspruchsvolle Weise zu lösen, nämlich durch einen einfachen Button, der die Vergabe auslöst und anschließend eine E-Mail oder dergleichen an Extern rausschickt. Hier müsste dann eventuell sogar noch eine zeitliche Komponente (Timer) eingebaut werden, die den ganzen Vergabeprozess auf zwei Wochen terminiert. Allerdings kann das ganze Prozedere auch weitaus schöner dargestellt werden, was dann jedoch auch in eine anspruchsvollere technische Modellierung mündet. Anschließend müsste eine Bestätigung oder Ablehnung empfangen werden, die besagt, ob die Lieferung mit dem ausgewählten Lieferanten einwandfrei ist. Ist diese nicht einwandfrei, wird eine Ablehnung per Mail verschickt und der Prozess beendet. Diesen Fall haben wir sogar technisch modelliert, aber da die vorangegangen Aktivitäten fehlen, haben wir das nicht weiter betrachtet. 
+Als weitere Eigenkritik ist anzumerken, dass die Aktivität *Rechnung begleichen* nur via Button ausgeführt wird, der die Variable dann auf True setzt, damit der Prozess weiterläuft. Hier ist es sicher auch möglich noch eine elegantere Weise zu wählen, die den Überweisungsprozess etwas anschaulicher darstellt.
+
+
+## potenzielle Verknüpfungen zu anderen Prozessen (3 Punkte)
 
