@@ -26,6 +26,17 @@ Die elektronische Beschaffung kann mit ihren einzelnen Aktivitäten als Prozessh
 
 Das BPMN Modell kann ganz oben in der Dokumentation betrachtet werden.
 
+Der Prozess e-Beschaffung startet in der Fachabteilung der TH Brandenburg mit einem Bedarf, der manuell über ein Formular gemeldet wird.
+Der Bedarf wird über ein Formular mit folgenden Pflichtfeldern abgefragt:
+- Bezeichnung
+- Einzelpreis
+- Menge
+- Rahmenvertrag [ja, nein]
+- Wenn Rahmenvertrag, welcher genau?
+
+Anschließend wird über eine *ServiceTask* der Gesamtpreis aus Einzelpreis und Menge berechnet. Aus dem berechneten Gesamtpreis und der Abfrage, ob es sich um einen Rahmenvertrag handelt, wird über die *DMN-Tabelle* entschieden, welcher Lieferant für das zu bestellende Produkt und Gesamtpreis automatisch kontaktiert werden soll. Das *exklusive Gateway* prüft, ob die Position in einen Rahmenvertrag hinterlegt ist. Wenn dies der Fall ist, wird der obere *Sequenzfluss* aktiviert. Sollte es sich um keinen Rahmenvertrag handeln, liegt die Entscheidung dabei, ob die Position bis zu 500 € kostet, dann wird der mittlere *Sequenzfluss* aktiviert. Falls die Position über 500 bis maximal 20.000€ liegt, wird der untere *Sequenzfluss* angesprochen. Bei einer Position oberhalb der 20k kann der Prozess nicht fortgeführt werden.
+
+
 
 
 ### DMN Modell
