@@ -1,3 +1,3 @@
 # eBeschaffung
 
-![e-Beschaffung Prozess](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![e-Beschaffung Prozess](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Prozess.jpeg)
