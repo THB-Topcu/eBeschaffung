@@ -61,7 +61,9 @@ Die DMN-Tabelle ist relativ einfach zu lesen. Sollte ein Rahmenvertrag für das 
 
 
 ## Erläuterung fachlicher und technischer Modellierungsentscheidungen (6 Punkte)
-
+Wir arbeiten insgesamt mit zwei externen Formularen, die im Camunda Modeler im BPMN-Prozess in der jeweiligen Aktivität hinterlegt werden müssen.
+Dazu klickt man die Aktivität an und wählt den Reiter Forms aus, und fügt den Link zum Formular in das Feld "Form Key" ein.
+Bsp.: embedded:app:Formular/Rechnungbegleichen.html
 
 
 
