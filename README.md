@@ -75,7 +75,7 @@ Wir hatten anfangs ein internes Formular, aber haben uns letztlich für ein exte
 Die [SendTask](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailSenden.java)
 wird
 
-Die [SendTask](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailSenden.java)
+Die [EmailEmpfangen](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailEmpfangen.java)
 wird
 
 Die [Datenbank](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/Database.java)
