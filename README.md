@@ -6,7 +6,7 @@
 ### Lokale Installation / Konfiguration
 
 Für eine lokale Installation und Konfiguration verweisen wir auf die Dokumentation von Herrn Kay Spannberg, die über folgenden Link aufgerufen werden kann. 
-> [Dokumentation von Herrn Spannberg](https://github.com/KaySpannberg/imma-prozess).
+> [Dokumentation von Herrn Spannberg](https://github.com/KaySpannberg/imma-prozess)
 
 ### Tools
 - Eclipse Java Oxygen
