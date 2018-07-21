@@ -65,6 +65,9 @@ Wir arbeiten insgesamt mit zwei externen Formularen, die im Camunda Modeler im B
 Dazu klickt man die Aktivität an und wählt den Reiter Forms aus, und fügt den Link zum Formular in das Feld "Form Key" ein.
 Bsp.: embedded:app:Formular/Rechnungbegleichen.html
 
+![Formular](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Formular%20hinzuf%C3%BCgen.PNG)
+
+
 
 
 ## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
