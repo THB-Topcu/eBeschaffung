@@ -38,6 +38,8 @@ Anschließend wird über eine *ServiceTask* der Gesamtpreis aus Einzelpreis und 
 
 Wird der oberste Pfad gefolgt wird eine "Send-Task" angesprochen, die den Bestellauftrag an den entsprechenden Dienstleister rausschicken. Bei dem *Message intermediate catch event* muss gewartet werden, bis eine Nachricht vom externen Dienstleister eingeht. In der Regel verschickt dieser die Bestellbestätigung. Die Rechnung muss anschließend (manuell) beglichen werden. Im weiteren Verlauf werden noch zwei *Service-Tasks* angesprochen, die die Produktinformationen zum einen in eine Datenbank abspeichern und zum anderen die Bestellung als Logfile in eine Textdatei schreiben. Der eingeleitete Bedarf ist dann damit gedeckt und der Prozess abgeschlossen.
 
+Folgt man den mittleren oder unteren Pfad des Gateways dann wird in beiden Fällen ein Angebot eingeholt und aufgrund des Angebots dann ein Vergabeprozess eingeleitet. Dieser muss extern geprüft werden, und wird anschließend mit einer Bestätigung oder einer Ablehnung zurückgesandt. Das folgende Gateway prüft nun, ob die Auftragsvergabe erfolgreich war oder nicht. Ist diese erfolgreich, wird die Bestellung ausgelöst und der Prozess wird wie oben beschrieben forgeführt. Ist die Auftragsvergabe nicht erfolgreich, wird der Prozess abgebrochen und eine Ablehnung per e-Mail rausgeschickt.
+
 
 ### DMN Modell
 
