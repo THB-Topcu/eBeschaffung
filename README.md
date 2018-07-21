@@ -118,7 +118,13 @@ Um nur die Abfrage zu zeigen, wie die Datenbank funktioniert, folgt ein kleiner 
 Wir wollten auch ein Datum hinterlegen, allerdings hat die Datenbank ein bestimmtes Format gefordert, welches wir in der Kürze der Zeit nicht abbilden konnten.
 
 Abschließend ist noch die [SaveToFile](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/SaveToFile.java)
-zu nennen.
+zu nennen. Hier haben wir uns gedacht, dass die Bestellung als Logfile noch mal separat in eine .txt-Datei abgespeichert werden soll. 
+
+Wie das funktioniert, kann der JavaKlasse entnommen werden. Das Resultat sieht dann wie folgt aus (nur die letzten 3 Zeilen, das vorher resultierte aus einem Test)
+
+![SaveToFile](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/Savetofile.PNG)
+
+Alternativ hätte man die Logs auch in eine excel-Datei speichern können.
 
 ## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
 Der Prozess ist mangels Zeit und Know-How nicht vollständig fachlich modelliert. Der Simple-Path funktioniert einwandfrei, aber sollte eine Lieferung nicht über den Rahmenvertrag laufen, fehlen noch die technischen Implementierungsschritte für das manuelle Einleiten des Vergabeprozesses. Das ist zwar über eine technisch nicht sehr anspruchsvolle Weise zu lösen, nämlich durch einen einfachen Button, der die Vergabe auslöst und anschließend eine E-Mail oder dergleichen an Extern rausschickt. Hier müsste dann eventuell sogar noch eine zeitliche Komponente (Timer) eingebaut werden, die den ganzen Vergabeprozess auf zwei Wochen terminiert. Allerdings kann das ganze Prozedere auch weitaus schöner dargestellt werden, was dann jedoch auch in eine anspruchsvollere technische Modellierung mündet. Anschließend müsste eine Bestätigung oder Ablehnung empfangen werden, die besagt, ob die Lieferung mit dem ausgewählten Lieferanten einwandfrei ist. Ist diese nicht einwandfrei, wird eine Ablehnung per Mail verschickt und der Prozess beendet. Diesen Fall haben wir sogar technisch modelliert, aber da die vorangegangen Aktivitäten fehlen, haben wir das nicht weiter betrachtet. 
