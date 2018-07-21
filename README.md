@@ -61,7 +61,8 @@ Die DMN-Tabelle ist relativ einfach zu lesen. Sollte ein Rahmenvertrag für das 
 
 
 ## Erläuterung fachlicher und technischer Modellierungsentscheidungen (6 Punkte)
-Wir arbeiten insgesamt mit zwei externen Formularen, die im Camunda Modeler im BPMN-Prozess in der jeweiligen Aktivität hinterlegt werden müssen.
+Der Prozess wird über ein externes Formular eingeleitet, dabei haben wir uns bewusst dafür entschieden, den Einzelpreis eines Produkts abzufragen, und die Bestellmenge, sodass im nächsten Schritt eine automatische Berechnung des Gesamtpreises erfolgt.
+Insgesamt haben wir mit zwei externen Formularen gearbeitet, die im Camunda Modeler im BPMN-Prozess in der jeweiligen Aktivität hinterlegt werden müssen.
 Dazu klickt man die Aktivität an und wählt den Reiter Forms aus, und fügt den Link zum Formular in das Feld "Form Key" ein.
 Bsp.: embedded:app:Formular/Rechnungbegleichen.html
 Das Formular ist unter: //src/main/webapp/Formular/Rechnungbegleichen.html abgelegt.
@@ -71,6 +72,8 @@ Das Formular ist unter: //src/main/webapp/Formular/Rechnungbegleichen.html abgel
 Wir hatten anfangs ein internes Formular, aber haben uns letztlich für ein externes Formular entschieden, da das externe Formular mehr Freiheiten bot und Pflichtfelder einfacher bestimmt werden konnten. Außerdem konnten wir mit Hilfe des Befehls
 `readonly` bestimmte Felder vor dem Bearbeiten schützen.
 
+Die [SendTask](https://github.com/THB-Topcu/eBeschaffung/blob/master/src/main/java/thb/wirtschaft/informatik/bpmn/EmailSenden.java)
+wird
 
 ## Reflexion von Schwachstellen und Optionen für Verbesserungen (3 Punkte)
 Der Prozess ist mangels Zeit und Know-How nicht vollständig fachlich modelliert. Der Simple-Path funktioniert einwandfrei, aber sollte eine Lieferung nicht über den Rahmenvertrag laufen, fehlen noch die technischen Implementierungsschritte für das manuelle Einleiten des Vergabeprozesses. Das ist zwar über eine technisch nicht sehr anspruchsvolle Weise zu lösen, nämlich durch einen einfachen Button, der die Vergabe auslöst und anschließend eine E-Mail oder dergleichen an Extern rausschickt. Hier müsste dann eventuell sogar noch eine zeitliche Komponente (Timer) eingebaut werden, die den ganzen Vergabeprozess auf zwei Wochen terminiert. Allerdings kann das ganze Prozedere auch weitaus schöner dargestellt werden, was dann jedoch auch in eine anspruchsvollere technische Modellierung mündet. Anschließend müsste eine Bestätigung oder Ablehnung empfangen werden, die besagt, ob die Lieferung mit dem ausgewählten Lieferanten einwandfrei ist. Ist diese nicht einwandfrei, wird eine Ablehnung per Mail verschickt und der Prozess beendet. Diesen Fall haben wir sogar technisch modelliert, aber da die vorangegangen Aktivitäten fehlen, haben wir das nicht weiter betrachtet. 
