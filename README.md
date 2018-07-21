@@ -59,6 +59,8 @@ und einen Output, der sich aus den Inputvariablen ergibt:
 
 Die DMN-Tabelle ist relativ einfach zu lesen. Sollte ein Rahmenvertrag für das Produkt vorliegen, wird der Wert mit true belegt und der entsprechende Rahmenvertrag ausgewählt (A, B oder C). Sollte kein Rahmenvertrag vorliegen, wird der Rahmenvertrag auf false gesetzt und die Entscheidung wird über den Gesamtpreis bestimmt. Zwischen 0 - 500 € wird Lieferant D ausgegeben, bei einem Preis oberhalb von 500 bis 20.000 € wird Lieferant E ausgegeben.
 
+Die DMN-Tabelle muss noch mit der jeweiligen Aktivität verknüpft werden. Dazu kopiert man die Decision ID der DMN Tabelle in die Decision Ref der entsprechenden Aktivität im Camunda Modeler.
+
 
 ## Erläuterung fachlicher und technischer Modellierungsentscheidungen (6 Punkte)
 Der Prozess wird über ein externes Formular eingeleitet, dabei haben wir uns bewusst dafür entschieden, den Einzelpreis eines Produkts abzufragen, und die Bestellmenge, sodass im nächsten Schritt eine automatische Berechnung des Gesamtpreises erfolgt.
