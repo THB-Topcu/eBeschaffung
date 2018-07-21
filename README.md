@@ -45,6 +45,17 @@ Folgt man den mittleren oder unteren Pfad des Gateways dann wird in beiden Fäll
 
 ![DMN Modell](https://raw.githubusercontent.com/THB-Topcu/eBeschaffung/master/Bilder/DMN%20Modell.PNG)
 
+Kurzgefasst ist die Decision Model and Notation eine Entscheidungsregel im Geschäftsprozessmanagement, das heißt, dass vordefinierten Regeln gefolgt werden. Diese Regeln müssen in der Tabelle vollständig aufgefangen werden, und ein entsprechendes Output (ein entsprechender Ausgang) angegeben werden.
+
+Unser DMN Modell hat drei Inputvariablen, die überprüft werden müssen:
+- Rahmenvertrag (Boolean)
+- Gesamtpreis (Long)
+- Rahmenverträge (String)
+
+und einen Output, der sich aus den Inputvariablen ergibt:
+- Lieferant (String)
+
+Die DMN-Tabelle ist relativ einfach zu lesen. Sollte ein Rahmenvertrag für das Produkt vorliegen, wird der Wert mit true belegt und der entsprechende Rahmenvertrag ausgewählt (A, B oder C). Sollte kein Rahmenvertrag vorliegen, wird der Rahmenvertrag auf false gesetzt und die Entscheidung wird über den Gesamtpreis bestimmt. Zwischen 0 - 500 € wird Lieferant D ausgegeben, bei einem Preis oberhalb von 500 bis 20.000 € wird Lieferant E ausgegeben.
 
 
 ## Erläuterung fachlicher und technischer Modellierungsentscheidungen (6 Punkte)
